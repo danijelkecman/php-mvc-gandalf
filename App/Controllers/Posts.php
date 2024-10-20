@@ -10,6 +10,25 @@ namespace App\Controllers;
  */
  class Posts extends \Core\Controller
  {
+     /**
+     * Before filter
+     *
+     * @return void
+     */
+    protected function before()
+    {
+        echo '(before) ';
+    }
+
+    /**
+     * Afte filter
+     *
+     * @return void
+     */
+    protected function after()
+    {
+        echo ' (after)';
+    }
 
      public function __call($name, $args)
      {
