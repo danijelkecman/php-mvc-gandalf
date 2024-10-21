@@ -36,7 +36,11 @@ class Home extends \Core\Controller {
      */
     public function indexAction()
     {
-        View::render('Home/index.php', [
+//        View::render('Home/index.php', [
+//            'name'      => 'Danijel',
+//            'colours'   => ['red', 'green', 'blue']
+//        ]);
+        View::renderTemplate('Home/index.html', [
             'name'      => 'Danijel',
             'colours'   => ['red', 'green', 'blue']
         ]);
